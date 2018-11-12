@@ -5,7 +5,7 @@ import "./button.scss"
 const Button = props => {
   return (
     <button
-      className={`button button--${props.appearance}`}
+      className={`button button--${props.appearance} button--${props.size}`}
       disabled={props.disabled}
     >
       {props.children}
@@ -14,6 +14,7 @@ const Button = props => {
 }
 
 Button.propTypes = {
+  disabled: PropTypes.bool,
   appearance: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -21,7 +22,14 @@ Button.propTypes = {
     "info",
     "accent",
     "success"
-  ])
+  ]),
+  size: PropTypes.oneOf(["small", "normal", "large"])
+}
+
+Button.defaultProps = {
+  disabled: false,
+  appearance: "primary",
+  size: "normal"
 }
 
 export default Button

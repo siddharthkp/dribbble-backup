@@ -1,0 +1,14 @@
+@import "node_modules/tokens/tokens";
+
+.spacer {
+  display: inline-block;
+  width: $token-spacing-small;
+}
+
+.spacer--medium {
+  width: $token-spacing-medium;
+}
+
+.spacer--large {
+  width: $token-spacing-large;
+}

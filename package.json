@@ -17,13 +17,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9001 -c .storybook -s ./public"
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./public",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.4",
     "@storybook/react": "4.0.4",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.4",
+    "docz": "0.12.9",
     "node-sass": "4.10.0"
   },
   "eslintConfig": {

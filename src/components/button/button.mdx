@@ -1,0 +1,53 @@
+---
+name: Button
+---
+
+import { Playground, PropsTable } from 'docz'
+import Button from './index'
+import {Preview, Spacer} from '../_helpers'
+
+# Button
+
+<Preview>
+  <Button appearance="primary">Click me</Button>
+</Preview>
+
+<PropsTable of={Button} />
+
+## Basic usage
+
+`Button` supports multiple styles with the `appearance` prop
+
+<Playground>
+  <Button appearance="primary">Click me</Button> <Spacer/>
+  <Button appearance="secondary">Click me</Button> <Spacer/>
+  <Button appearance="secondary-alt">Click me</Button> <Spacer/>
+  <Button appearance="info">Click me</Button> <Spacer/>
+  <Button appearance="accent">Click me</Button> <Spacer/>
+  <Button appearance="success">Click me</Button>
+</Playground>
+
+## Disabled
+
+You can pass the disabled prop to make the `Button` disabled
+
+<Playground>
+  <Button disabled appearance="primary">Click me</Button> <Spacer/>
+  <Button disabled appearance="secondary">Click me</Button> <Spacer/>
+  <Button disabled appearance="secondary-alt">Click me</Button> <Spacer/>
+  <Button disabled appearance="info">Click me</Button> <Spacer/>
+  <Button disabled appearance="accent">Click me</Button> <Spacer/>
+  <Button disabled appearance="success">Click me</Button>
+</Playground>
+
+
+## Sizes
+
+`Button` supports multiple sizes as well
+
+<Playground>
+  <Button size="large" appearance="secondary">Click me</Button> <Spacer/>
+  <Button appearance="secondary">Click me</Button> <Spacer/>
+  <Button size="small" appearance="secondary">Click me</Button> <Spacer/>
+
+</Playground>

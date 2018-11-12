@@ -1,0 +1,10 @@
+@import "node_modules/tokens/tokens";
+
+.preview {
+  text-align: center;
+  background: $token-color-gray-100;
+  border-radius: 4px;
+  padding: 50px 0;
+  margin-bottom: 10px;
+  border: 1px solid #ced4de;
+}
