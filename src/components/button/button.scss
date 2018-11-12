@@ -1,0 +1,152 @@
+@import "node_modules/tokens/tokens";
+
+$font-family: $token-font-family;
+$font-size: $token-font-size--small;
+$line-height: $token-font-line-height;
+$border-size: $token-misc-border-size;
+$border-radius: $token-misc-border-radius;
+$padding: $token-spacing-small $token-spacing-medium;
+
+/* Map of supported appearances */
+$appearances: (
+  primary: "primary",
+  secondary: "secondary",
+  secondary-alt: "secondary-alt",
+  info: "info",
+  accent: "accent",
+  success: "success"
+);
+
+/* Map of background color for each appearance */
+$background: (
+  primary: $token-color-brand-500,
+  secondary: transparent,
+  secondary-alt: $token-color-white,
+  info: $token-color-info-500,
+  accent: $token-color-accent-500,
+  success: $token-color-success-500
+);
+
+$background--hover: (
+  primary: $token-color-brand-700,
+  secondary: transparent,
+  secondary-alt: $token-color-white,
+  info: $token-color-accent-500,
+  accent: $token-color-accent-700,
+  success: $token-color-success-700
+);
+
+$background--active: (
+  primary: $token-color-brand-900,
+  secondary: transparent,
+  secondary-alt: $token-color-white,
+  info: $token-color-accent-700,
+  accent: $token-color-accent-900,
+  success: $token-color-success-900
+);
+
+$text: (
+  primary: $token-color-white,
+  secondary: $token-color-text-primary-light,
+  secondary-alt: $token-color-text-primary-light,
+  info: $token-color-text-primary-light,
+  accent: $token-color-white,
+  success: $token-color-white
+);
+
+$text--hover: (
+  primary: $token-color-white,
+  secondary: $token-color-text-primary,
+  secondary-alt: $token-color-text-primary,
+  info: $token-color-white,
+  accent: $token-color-white,
+  success: $token-color-white
+);
+
+$text--active: (
+  primary: $token-color-white,
+  secondary: $token-color-text-link,
+  secondary-alt: $token-color-text-link,
+  info: $token-color-white,
+  accent: $token-color-white,
+  success: $token-color-white
+);
+
+$border: (
+  primary: $token-color-brand-500,
+  secondary: $token-color-text-primary-light,
+  secondary-alt: $token-color-text-primary-light,
+  info: $token-color-info-500,
+  accent: $token-color-accent-500,
+  success: $token-color-success-500
+);
+
+$border--hover: (
+  primary: $token-color-brand-700,
+  secondary: $token-color-text-primary,
+  secondary-alt: $token-color-text-primary,
+  info: $token-color-accent-500,
+  accent: $token-color-accent-700,
+  success: $token-color-success-700
+);
+
+$border--active: (
+  primary: $token-color-brand-900,
+  secondary: $token-color-text-link,
+  secondary-alt: $token-color-text-link,
+  info: $token-color-accent-700,
+  accent: $token-color-accent-900,
+  success: $token-color-success-900
+);
+
+$border--active: (
+  primary: $token-color-brand-500,
+  secondary: transparent,
+  secondary-alt: $token-color-white,
+  info: $token-color-info-500,
+  accent: $token-color-accent-500,
+  success: $token-color-success-500
+);
+
+.button {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $token-font-line-height;
+  text-align: center;
+
+  border: $border-size solid;
+  border-radius: $border-radius;
+
+  padding: $padding;
+  cursor: pointer;
+}
+
+/* For each appearance, created a new class  */
+@each $name, $value in $appearances {
+  .button--#{$name} {
+    color: map-get($text, $name);
+    background-color: map-get($background, $name);
+    border-color: map-get($border, $name);
+
+    &:hover {
+      color: map-get($text--hover, $name);
+      background-color: map-get($background--hover, $name);
+      border-color: map-get($border--hover, $name);
+    }
+
+    &:focus,
+    &:active {
+      color: map-get($text--active, $name);
+      background-color: map-get($background--active, $name);
+      border-color: map-get($border--active, $name);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      color: map-get($text, $name);
+      background-color: map-get($background, $name);
+      border-color: map-get($border, $name);
+    }
+  }
+}

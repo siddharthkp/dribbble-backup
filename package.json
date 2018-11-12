@@ -2,6 +2,10 @@
   "name": "dribbble",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "src/components",
+    "src/demo"
+  ],
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",

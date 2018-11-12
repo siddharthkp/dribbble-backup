@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot-Italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot-Medium-Italic.woff2.woff2) format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Haas Grot Text R Web";
+  src: url(/fonts/NeueHaasGrot-Bold-Italic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 14px;
+  /* font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: "Haas Grot Text R Web", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
