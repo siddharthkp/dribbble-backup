@@ -173,3 +173,8 @@ $sizes: (
     padding: map-get($value, y) map-get($value, x);
   }
 }
+
+/* Styles for icon inside button */
+.button .icon {
+  margin-right: $token-spacing-small;
+}

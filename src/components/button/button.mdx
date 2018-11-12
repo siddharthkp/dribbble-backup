@@ -4,7 +4,7 @@ name: Button
 
 import { Playground, PropsTable } from 'docz'
 import Button from './index'
-import {Preview, Spacer} from '../_helpers'
+import {Preview, Stack} from '../_helpers'
 
 # Button
 
@@ -19,12 +19,14 @@ import {Preview, Spacer} from '../_helpers'
 `Button` supports multiple styles with the `appearance` prop
 
 <Playground>
-  <Button appearance="primary">Click me</Button> <Spacer/>
-  <Button appearance="secondary">Click me</Button> <Spacer/>
-  <Button appearance="secondary-alt">Click me</Button> <Spacer/>
-  <Button appearance="info">Click me</Button> <Spacer/>
-  <Button appearance="accent">Click me</Button> <Spacer/>
-  <Button appearance="success">Click me</Button>
+  <Stack>
+    <Button appearance="primary">Click me</Button>
+    <Button appearance="secondary">Click me</Button>
+    <Button appearance="secondary-alt">Click me</Button>
+    <Button appearance="info">Click me</Button>
+    <Button appearance="accent">Click me</Button>
+    <Button appearance="success">Click me</Button>
+  </Stack>
 </Playground>
 
 ## Disabled
@@ -32,12 +34,14 @@ import {Preview, Spacer} from '../_helpers'
 You can pass the disabled prop to make the `Button` disabled
 
 <Playground>
-  <Button disabled appearance="primary">Click me</Button> <Spacer/>
-  <Button disabled appearance="secondary">Click me</Button> <Spacer/>
-  <Button disabled appearance="secondary-alt">Click me</Button> <Spacer/>
-  <Button disabled appearance="info">Click me</Button> <Spacer/>
-  <Button disabled appearance="accent">Click me</Button> <Spacer/>
-  <Button disabled appearance="success">Click me</Button>
+  <Stack>
+    <Button disabled appearance="primary">Click me</Button>
+    <Button disabled appearance="secondary">Click me</Button>
+    <Button disabled appearance="secondary-alt">Click me</Button>
+    <Button disabled appearance="info">Click me</Button>
+    <Button disabled appearance="accent">Click me</Button>
+    <Button disabled appearance="success">Click me</Button>
+  </Stack>
 </Playground>
 
 
@@ -46,8 +50,19 @@ You can pass the disabled prop to make the `Button` disabled
 `Button` supports multiple sizes as well
 
 <Playground>
-  <Button size="large" appearance="secondary">Click me</Button> <Spacer/>
-  <Button appearance="secondary">Click me</Button> <Spacer/>
-  <Button size="small" appearance="secondary">Click me</Button> <Spacer/>
+  <Stack>
+    <Button size="large" appearance="secondary">Click me</Button>
+    <Button appearance="secondary">Click me</Button>
+    <Button size="small" appearance="secondary">Click me</Button>
+  </Stack>
+</Playground>
 
+## With Icon
+
+You can pass the name of the `icon` as a prop
+<Playground>
+  <Stack>
+    <Button appearance="secondary-alt" icon="heart">Like</Button>
+    <Button appearance="secondary" icon="copy">Copy</Button>
+  </Stack>
 </Playground>

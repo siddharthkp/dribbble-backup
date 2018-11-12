@@ -1,4 +1,4 @@
-import Spacer from "./spacer"
+import Stack from "./stack"
 import Preview from "./preview"
 
-export { Spacer, Preview }
+export { Stack, Preview }

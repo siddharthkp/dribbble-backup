@@ -13,13 +13,11 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9001 -c .storybook -s ./public",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "dev:docs": "docz dev",
+    "dev:storybook": "start-storybook -p 9001 -c .storybook -s ./public",
+    "dev:demo": "react-scripts start",
+    "build": "docz build",
+    "start": "serve dist"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.4",
