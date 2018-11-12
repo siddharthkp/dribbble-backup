@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "workspaces": [
+    "src/tokens",
     "src/components",
     "src/demo"
   ],
@@ -15,7 +16,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./public"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "4.0.4",
+    "@storybook/react": "4.0.4",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.4",
+    "node-sass": "4.10.0"
   },
   "eslintConfig": {
     "extends": "react-app"
