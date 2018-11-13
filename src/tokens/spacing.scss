@@ -1,4 +1,7 @@
-$token-spacing-xsmall: 5px;
-$token-spacing-small: 10px;
-$token-spacing-medium: 15px;
-$token-spacing-large: 20px;
+$global-spacing: (
+  xsmall: 5px,
+  small: 10px,
+  medium: 15px,
+  large: 20px,
+  xlarge: 30px
+);

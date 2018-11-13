@@ -1,2 +1,6 @@
-$token-misc-border-size: 1px;
-$token-misc-border-radius: 4px;
+$global-misc-border-size: 1px;
+$global-misc-border-radius: 4px;
+
+$global-misc-box-shadow--deep: rgba(0, 0, 0, 0.15) 0px 3px 2px 0px;
+$global-misc-box-shadow--medium: rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
+$global-misc-box-shadow--shallow: rgba(0, 0, 0, 0.15) 0px 5px 5px 3px;

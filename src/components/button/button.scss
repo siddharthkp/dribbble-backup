@@ -1,10 +1,10 @@
 @import "node_modules/tokens/tokens";
 
-$font-family: $token-font-family;
-$font-size: $token-font-size--small;
-$line-height: $token-font-line-height;
-$border-size: $token-misc-border-size;
-$border-radius: $token-misc-border-radius;
+$font-family: $global-font-family;
+$font-size: map-get($global-font-size, small);
+$line-height: map-get($global-font-line-height, body);
+$border-size: $global-misc-border-size;
+$border-radius: $global-misc-border-radius;
 
 /* Map of supported appearances */
 $appearances: (
@@ -18,115 +18,115 @@ $appearances: (
 
 /* Map of background color for each appearance */
 $background: (
-  primary: $token-color-brand-500,
+  primary: map-get($global-color-brand, 500),
   secondary: transparent,
-  secondary-alt: $token-color-white,
-  info: $token-color-info-500,
-  accent: $token-color-accent-500,
-  success: $token-color-success-500
+  secondary-alt: $global-color-white,
+  info: map-get($global-color-info, 500),
+  accent: map-get($global-color-accent, 500),
+  success: map-get($global-color-success, 500)
 );
 
 $background--hover: (
-  primary: $token-color-brand-700,
+  primary: map-get($global-color-brand, 700),
   secondary: transparent,
-  secondary-alt: $token-color-white,
-  info: $token-color-accent-500,
-  accent: $token-color-accent-700,
-  success: $token-color-success-700
+  secondary-alt: $global-color-white,
+  info: map-get($global-color-accent, 500),
+  accent: map-get($global-color-accent, 700),
+  success: map-get($global-color-success, 700)
 );
 
 $background--active: (
-  primary: $token-color-brand-900,
+  primary: map-get($global-color-brand, 900),
   secondary: transparent,
-  secondary-alt: $token-color-white,
-  info: $token-color-accent-700,
-  accent: $token-color-accent-900,
-  success: $token-color-success-900
+  secondary-alt: $global-color-white,
+  info: map-get($global-color-accent, 700),
+  accent: map-get($global-color-accent, 900),
+  success: map-get($global-color-success, -90) 0
 );
 
 $text: (
-  primary: $token-color-white,
-  secondary: $token-color-text-primary-light,
-  secondary-alt: $token-color-text-primary-light,
-  info: $token-color-text-primary-light,
-  accent: $token-color-white,
-  success: $token-color-white
+  primary: $global-color-white,
+  secondary: map-get($global-color-text, primary-light),
+  secondary-alt: map-get($global-color-text, primary-light),
+  info: map-get($global-color-text, primary-light),
+  accent: $global-color-white,
+  success: $global-color-white
 );
 
 $text--hover: (
-  primary: $token-color-white,
-  secondary: $token-color-text-primary,
-  secondary-alt: $token-color-text-primary,
-  info: $token-color-white,
-  accent: $token-color-white,
-  success: $token-color-white
+  primary: $global-color-white,
+  secondary: map-get($global-color-text, primary),
+  secondary-alt: map-get($global-color-text, primary),
+  info: $global-color-white,
+  accent: $global-color-white,
+  success: $global-color-white
 );
 
 $text--active: (
-  primary: $token-color-white,
-  secondary: $token-color-text-link,
-  secondary-alt: $token-color-text-link,
-  info: $token-color-white,
-  accent: $token-color-white,
-  success: $token-color-white
+  primary: $global-color-white,
+  secondary: map-get($global-color-text, link),
+  secondary-alt: map-get($global-color-text, link),
+  info: $global-color-white,
+  accent: $global-color-white,
+  success: $global-color-white
 );
 
 $border: (
-  primary: $token-color-brand-500,
-  secondary: $token-color-text-primary-light,
-  secondary-alt: $token-color-text-primary-light,
-  info: $token-color-info-500,
-  accent: $token-color-accent-500,
-  success: $token-color-success-500
+  primary: map-get($global-color-brand, 500),
+  secondary: map-get($global-color-text, primary-light),
+  secondary-alt: map-get($global-color-text, primary-light),
+  info: map-get($global-color-info, 500),
+  accent: map-get($global-color-accent, 500),
+  success: map-get($global-color-success, -50) 0
 );
 
 $border--hover: (
-  primary: $token-color-brand-700,
-  secondary: $token-color-text-primary,
-  secondary-alt: $token-color-text-primary,
-  info: $token-color-accent-500,
-  accent: $token-color-accent-700,
-  success: $token-color-success-700
+  primary: map-get($global-color-brand, 700),
+  secondary: map-get($global-color-text, primary),
+  secondary-alt: map-get($global-color-text, primary),
+  info: map-get($global-color-accent, 500),
+  accent: map-get($global-color-accent, 700),
+  success: map-get($global-color-success, -70) 0
 );
 
 $border--active: (
-  primary: $token-color-brand-900,
-  secondary: $token-color-text-link,
-  secondary-alt: $token-color-text-link,
-  info: $token-color-accent-700,
-  accent: $token-color-accent-900,
-  success: $token-color-success-900
+  primary: map-get($global-color-brand, 900),
+  secondary: map-get($global-color-text, link),
+  secondary-alt: map-get($global-color-text, link),
+  info: map-get($global-color-accent, 700),
+  accent: map-get($global-color-accent, 900),
+  success: map-get($global-color-success, -90) 0
 );
 
 $border--active: (
-  primary: $token-color-brand-500,
+  primary: map-get($global-color-brand, 500),
   secondary: transparent,
-  secondary-alt: $token-color-white,
-  info: $token-color-info-500,
-  accent: $token-color-accent-500,
-  success: $token-color-success-500
+  secondary-alt: $global-color-white,
+  info: map-get($global-color-info, 500),
+  accent: map-get($global-color-accent, 500),
+  success: map-get($global-color-success, -50) 0
 );
 
 /* Size map for padding */
 $sizes: (
   large: (
-    y: $token-spacing-large,
-    x: $token-spacing-large
+    y: map-get($global-spacing, large),
+    x: map-get($global-spacing, large)
   ),
   normal: (
-    y: $token-spacing-small,
-    x: $token-spacing-medium
+    y: map-get($global-spacing, small),
+    x: map-get($global-spacing, medium)
   ),
   small: (
-    y: $token-spacing-xsmall,
-    x: $token-spacing-small
+    y: map-get($global-spacing, xsmall),
+    x: map-get($global-spacing, small)
   )
 );
 
 .button {
   font-family: $font-family;
   font-size: $font-size;
-  line-height: $token-font-line-height;
+  line-height: $line-height;
   text-align: center;
 
   border: $border-size solid;
@@ -176,5 +176,5 @@ $sizes: (
 
 /* Styles for icon inside button */
 .button .icon {
-  margin-right: $token-spacing-small;
+  margin-right: map-get($global-spacing, small);
 }

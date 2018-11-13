@@ -2,9 +2,9 @@
 name: Button
 ---
 
-import { Playground, PropsTable } from 'docz'
-import Button from './index'
-import {Preview, Stack} from '../_helpers'
+import { Playground, PropsTable } from "docz"
+import Button from "./index"
+import { Preview, Stack } from "../_helpers"
 
 # Button
 
@@ -35,15 +35,26 @@ You can pass the disabled prop to make the `Button` disabled
 
 <Playground>
   <Stack>
-    <Button disabled appearance="primary">Click me</Button>
-    <Button disabled appearance="secondary">Click me</Button>
-    <Button disabled appearance="secondary-alt">Click me</Button>
-    <Button disabled appearance="info">Click me</Button>
-    <Button disabled appearance="accent">Click me</Button>
-    <Button disabled appearance="success">Click me</Button>
+    <Button disabled appearance="primary">
+      Click me
+    </Button>
+    <Button disabled appearance="secondary">
+      Click me
+    </Button>
+    <Button disabled appearance="secondary-alt">
+      Click me
+    </Button>
+    <Button disabled appearance="info">
+      Click me
+    </Button>
+    <Button disabled appearance="accent">
+      Click me
+    </Button>
+    <Button disabled appearance="success">
+      Click me
+    </Button>
   </Stack>
 </Playground>
-
 
 ## Sizes
 
@@ -51,18 +62,27 @@ You can pass the disabled prop to make the `Button` disabled
 
 <Playground>
   <Stack>
-    <Button size="large" appearance="secondary">Click me</Button>
+    <Button size="large" appearance="secondary">
+      Click me
+    </Button>
     <Button appearance="secondary">Click me</Button>
-    <Button size="small" appearance="secondary">Click me</Button>
+    <Button size="small" appearance="secondary">
+      Click me
+    </Button>
   </Stack>
 </Playground>
 
 ## With Icon
 
 You can pass the name of the `icon` as a prop
+
 <Playground>
   <Stack>
-    <Button appearance="secondary-alt" icon="heart">Like</Button>
-    <Button appearance="secondary" icon="copy">Copy</Button>
+    <Button appearance="secondary-alt" icon="like">
+      Like
+    </Button>
+    <Button appearance="secondary" icon="copy">
+      Copy
+    </Button>
   </Stack>
 </Playground>

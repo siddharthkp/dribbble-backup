@@ -1,7 +1,11 @@
-$token-font-family: neue-haas-grotesk-text, Helvetica, Arial, sans-serif;
+$global-font-family: neue-haas-grotesk-text, Helvetica, Arial, sans-serif;
 
-$token-font-size--default: 14px;
-$token-font-size--small: 13px;
-$token-font-size--xsmall: 12px;
+$global-font-size: (
+  default: 14px,
+  small: 13px,
+  xsmall: 12px
+);
 
-$token-font-line-height: 1.5;
+$global-font-line-height: (
+  body: 1.5
+);

@@ -1,85 +1,110 @@
-$token-color-gray-100: #f4f4f4;
-$token-color-gray-200: #e1e1e7;
-$token-color-gray-300: #ddd;
-$token-color-gray-400: #bbb;
-$token-color-gray-500: #999;
-$token-color-gray-600: #777;
-$token-color-gray-700: #666;
-$token-color-gray-800: #444;
-$token-color-gray-900: #333;
+$global-color-gray: (
+  100: #f4f4f4,
+  200: #e1e1e7,
+  300: #ddd,
+  400: #bbb,
+  500: #999,
+  600: #777,
+  700: #666,
+  800: #444,
+  900: #333
+);
 
-$token-color-white: #fff;
+$global-color-white: #fff;
 
-$token-color-pink-500: #d95988;
-$token-color-pink-700: #df3e7b;
-$token-color-pink-900: #c22b65;
+$global-color-pink: (
+  500: #d95988,
+  700: #df3e7b,
+  900: #c22b65
+);
 
-$token-color-red-300: #ed615c;
+$global-color-red: (
+  300: #ed615c,
+  500: #ea3423,
+  700: #ae2318
+);
 
-$token-color-blue-300: #4fb4de;
-$token-color-blue-500: #3a8bbb;
-$token-color-blue-700: #1e6189;
-$token-color-blue-900: #0c3f5d;
-
-$token-color-green-500: #7bbb5e;
-$token-color-green-700: #5b9540;
-$token-color-green-900: #3b6d25;
+$global-color-blue: (
+  300: #4fb4de,
+  500: #3a8bbb,
+  700: #1e6189,
+  900: #0c3f5d
+);
+$global-color-green: (
+  500: #7bbb5e,
+  700: #5b9540,
+  900: #3b6d25
+);
 
 /* Named colors */
 
-$token-color-brand-500: $token-color-pink-500;
-$token-color-brand-700: $token-color-pink-700;
-$token-color-brand-900: $token-color-pink-900;
+$global-color-brand: (
+  500: map-get($global-color-pink, 500),
+  700: map-get($global-color-pink, 700),
+  900: map-get($global-color-pink, 900)
+);
 
 /* Primary colors */
 
-$token-color-primary-pink: $token-color-pink-500;
-$token-color-primary-blue: $token-color-blue-500;
+$global-color-primary: (
+  pink: map-get($global-color-pink, 500),
+  blue: map-get($global-color-blue, 500)
+);
 
 /* Secondary colors */
 
-$token-color-secondary-gray: $token-color-gray-300;
-$token-color-secondary-green: $token-color-green-500;
-$token-color-secondary-red: $token-color-red-300;
-$token-color-secondary-blue: $token-color-blue-300;
+$global-color-secondary: (
+  gray: map-get($global-color-gray, 300),
+  green: map-get($global-color-green, 500),
+  red: map-get($global-color-red, 300),
+  blue: map-get($global-color-blue, 300)
+);
 
 /* Accent colors */
 
-$token-color-accent-300: $token-color-blue-300;
-$token-color-accent-500: $token-color-blue-500;
-$token-color-accent-700: $token-color-blue-700;
-$token-color-accent-900: $token-color-blue-900;
+$global-color-accent: (
+  300: map-get($global-color-blue, 300),
+  500: map-get($global-color-blue, 500),
+  700: map-get($global-color-blue, 700),
+  900: map-get($global-color-blue, 900)
+);
 
 /* Success colors */
 
-$token-color-success-500: $token-color-green-500;
-$token-color-success-700: $token-color-green-700;
-$token-color-success-900: $token-color-green-900;
+$global-color-success: (
+  500: map-get($global-color-green, 500),
+  700: map-get($global-color-green, 700),
+  900: map-get($global-color-green, 900)
+);
 
 /* Info colors */
 
-$token-color-info-500: $token-color-gray-300;
+$global-color-info: (
+  500: map-get($global-color-gray, 300)
+);
 
 /* Backgrounds */
 
-$token-color-background-light: $token-color-gray-100;
-$token-color-background-light-alt: $token-color-gray-200;
-$token-color-background-dark: $token-color-gray-900;
-$token-color-background-dark-alt: $token-color-gray-800;
+$global-color-background: (
+  light: map-get($global-color-gray, 100),
+  light-alt: map-get($global-color-gray, 200),
+  dark: map-get($global-color-gray, 900),
+  dark-alt: map-get($global-color-gray, 800)
+);
 
 /* Text */
 
-$token-color-text-primary: $token-color-gray-800;
-$token-color-text-primary-light: $token-color-gray-600;
-$token-color-text-secondary: $token-color-gray-500;
-$token-color-text-disabled: $token-color-gray-400;
-
-$token-color-text-link: $token-color-blue-500;
-$token-color-text-link-dark: $token-color-blue-700;
-
-$token-color-text-primary-on-dark: $token-color-gray-300; /* different */
-$token-color-text-secondary-on-dark: $token-color-gray-500;
+$global-color-text: (
+  primary: map-get($global-color-gray, 800),
+  primary-light: map-get($global-color-gray, 600),
+  secondary: map-get($global-color-gray, 500),
+  disabled: map-get($global-color-gray, 400),
+  link: map-get($global-color-blue, 500),
+  link-dark: map-get($global-color-blue, 700),
+  /* different */ primary-on-dark: map-get($global-color-gray, 300),
+  secondary-on-dark: map-get($global-color-gray, 500)
+);
 
 /* Borders */
 
-$token-color-border-info: $token-color-gray-400;
+$global-color-border-info: map-get($global-color-gray, 400);
