@@ -14,13 +14,13 @@ const Box = props => {
         }}
       />
       <div>{props.name}</div>
+      {props.color ? <div>{props.color}</div> : null}
     </div>
   )
 }
 
 Box.defaultProps = {
-  size: 100,
-  color: "#e1e1e7"
+  size: 100
 }
 
 export default Box

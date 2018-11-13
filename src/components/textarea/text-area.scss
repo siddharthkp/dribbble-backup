@@ -1,0 +1,5 @@
+@import "../_input/input";
+
+.text-area {
+  @extend %input;
+}

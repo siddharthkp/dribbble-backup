@@ -1,0 +1,23 @@
+---
+name: TextInput
+---
+
+import { Playground, PropsTable } from "docz"
+import TextInput from "./index"
+import { Preview, Stack } from "../_helpers"
+
+# TextInput
+
+<Preview>
+  <TextInput defaultValue="auth0" placeholder="Enter text" />
+</Preview>
+
+<PropsTable of={TextInput} />
+
+## Input states
+
+<Stack>
+  <TextInput placeholder="Enter text" />
+  <TextInput hasError placeholder="Enter text" />
+  <TextInput disabled placeholder="This is readonly" />
+</Stack>

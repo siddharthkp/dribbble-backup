@@ -1,10 +1,8 @@
-@import "node_modules/tokens/tokens";
-
 .h-preview {
   text-align: center;
-  background: map-get($global-color-gray, 100);
+  background: #f4f4f4;
   border-radius: 4px;
-  padding: 50px 0;
+  padding: 50px;
   margin-bottom: 10px;
   border: 1px solid #ced4de;
 }

@@ -112,16 +112,26 @@ import { Preview, Box, Stack } from "../components/_helpers"
 <Preview>
   <Stack>
     <Box
+      color="#FFF"
       name="shallow"
-      style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 2px 0px" }}
+      style={{ border: "none", boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.1)" }}
     />
     <Box
-      name="medium"
-      style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px 4px 4px 0px" }}
-    />
-    <Box
+      color="#FFF"
       name="deep"
-      style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 5px 3px" }}
+      style={{
+        border: "none",
+        boxShadow:
+          "0px 0px 1px rgba(102, 102, 102, 0.5), 0px 1px 2px rgba(102, 102, 102, 0.25)"
+      }}
+    />
+    <Box
+      color="#FFF"
+      name="inset"
+      style={{
+        border: "none",
+        boxShadow: "inset 0px 1px 2px rgba(0, 0, 0, 0.15)"
+      }}
     />
   </Stack>
 </Preview>

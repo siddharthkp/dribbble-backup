@@ -1,0 +1,23 @@
+---
+name: TextArea
+---
+
+import { Playground, PropsTable } from "docz"
+import TextArea from "./index"
+import { Preview, Stack } from "../_helpers"
+
+# TextArea
+
+<Preview>
+  <TextArea defaultValue="auth0" placeholder="Enter text" />
+</Preview>
+
+<PropsTable of={TextArea} />
+
+## Input states
+
+<Stack>
+  <TextArea placeholder="Enter text" />
+  <TextArea hasError placeholder="Enter text" />
+  <TextArea disabled placeholder="This is readonly" />
+</Stack>

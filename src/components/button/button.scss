@@ -5,6 +5,7 @@ $font-size: map-get($global-font-size, small);
 $line-height: map-get($global-font-line-height, body);
 $border-size: $global-misc-border-size;
 $border-radius: $global-misc-border-radius;
+$disabled-opacity: 0.5;
 
 /* Map of supported appearances */
 $appearances: (
@@ -159,7 +160,7 @@ $sizes: (
 
     &:disabled {
       cursor: not-allowed;
-      opacity: 0.5;
+      opacity: $disabled-opacity;
       color: map-get($text, $name);
       background-color: map-get($background, $name);
       border-color: map-get($border, $name);

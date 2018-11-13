@@ -77,6 +77,12 @@ $global-color-success: (
   900: map-get($global-color-green, 900)
 );
 
+/* Danger color */
+
+$global-color-danger: (
+  500: map-get($global-color-red, 300)
+);
+
 /* Info colors */
 
 $global-color-info: (
@@ -89,7 +95,8 @@ $global-color-background: (
   light: map-get($global-color-gray, 100),
   light-alt: map-get($global-color-gray, 200),
   dark: map-get($global-color-gray, 900),
-  dark-alt: map-get($global-color-gray, 800)
+  dark-alt: map-get($global-color-gray, 800),
+  info: map-get($global-color-info, 500)
 );
 
 /* Text */
