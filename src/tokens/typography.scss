@@ -1,12 +1,22 @@
 $global-font-family: neue-haas-grotesk-text, Helvetica, Arial, sans-serif;
 
 $global-font-size: (
+  16: 16px,
   15: 15px,
   default: 14px,
+  13: 13px,
   small: 13px,
+  12: 12px,
   xsmall: 12px
 );
 
+$global-font-weight: (
+  default: 400,
+  medium: 500,
+  bold: 700
+);
+
 $global-font-line-height: (
-  body: 1.5
+  body: 1.5,
+  button: 1.2
 );

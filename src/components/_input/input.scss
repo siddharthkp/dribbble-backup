@@ -1,7 +1,6 @@
 @import "node_modules/tokens/tokens";
 
 $font-family: $global-font-family;
-$font-size: map-get($global-font-size, 15);
 $line-height: map-get($global-font-line-height, body);
 $border-size: $global-misc-border-size;
 $border-radius: $global-misc-border-radius;
@@ -10,7 +9,8 @@ $disabled-opacity: 0.5;
 
 $text-color: map-get($global-color-text, primary);
 $placeholder-color: map-get($global-color-text, secondary);
-$padding: map-get($global-spacing, small) map-get($global-spacing, magic-input);
+
+$padding: map-get($global-spacing, small) 12px;
 
 $input: (
   background: map-get($global-color-background, info),
@@ -33,7 +33,6 @@ $error-border: map-get($global-color-danger, 500);
   width: 100%;
 
   font-family: $font-family;
-  font-size: $font-size;
   line-height: $line-height;
   text-align: left;
   padding: $padding;

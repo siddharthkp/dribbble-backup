@@ -3,7 +3,7 @@ name: TextInput
 ---
 
 import { Playground, PropsTable } from "docz"
-import TextInput from "./index"
+import { TextInput } from "../index"
 import { Preview, Stack } from "../_helpers"
 
 # TextInput
@@ -16,8 +16,12 @@ import { Preview, Stack } from "../_helpers"
 
 ## Input states
 
-<Stack>
+<Playground>
   <TextInput placeholder="Enter text" />
+  <br />
+  <br />
   <TextInput hasError placeholder="Enter text" />
+  <br />
+  <br />
   <TextInput disabled placeholder="This is readonly" />
-</Stack>
+</Playground>

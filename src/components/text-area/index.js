@@ -3,9 +3,18 @@ import PropTypes from "prop-types"
 import "./text-area.scss"
 
 const TextArea = props => {
-  let className = "text-area"
-  if (props.hasError) className += " error"
-  return <textarea className={className} disabled={props.disabled} {...props} />
+  const { hasError, ...restOfTheProps } = props
+
+  let className = "text-input"
+  if (hasError) className += " error"
+
+  return (
+    <textarea
+      className={className}
+      disabled={props.disabled}
+      {...restOfTheProps}
+    />
+  )
 }
 
 TextArea.propTypes = {

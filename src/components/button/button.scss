@@ -2,10 +2,12 @@
 
 $font-family: $global-font-family;
 $font-size: map-get($global-font-size, small);
-$line-height: map-get($global-font-line-height, body);
+$font-weight: map-get($global-font-weight, medium);
+$line-height: map-get($global-font-line-height, button);
 $border-size: $global-misc-border-size;
 $border-radius: $global-misc-border-radius;
 $disabled-opacity: 0.5;
+$icon-margin: map-get($global-spacing, small);
 
 /* Map of supported appearances */
 $appearances: (
@@ -127,6 +129,7 @@ $sizes: (
 .button {
   font-family: $font-family;
   font-size: $font-size;
+  font-weight: $font-weight;
   line-height: $line-height;
   text-align: center;
 
@@ -177,5 +180,5 @@ $sizes: (
 
 /* Styles for icon inside button */
 .button .icon {
-  margin-right: map-get($global-spacing, small);
+  margin-right: $icon-margin;
 }

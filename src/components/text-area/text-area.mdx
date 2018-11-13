@@ -3,7 +3,7 @@ name: TextArea
 ---
 
 import { Playground, PropsTable } from "docz"
-import TextArea from "./index"
+import { TextArea } from "../index"
 import { Preview, Stack } from "../_helpers"
 
 # TextArea
@@ -16,8 +16,12 @@ import { Preview, Stack } from "../_helpers"
 
 ## Input states
 
-<Stack>
+<Playground>
   <TextArea placeholder="Enter text" />
+  <br />
+  <br />
   <TextArea hasError placeholder="Enter text" />
+  <br />
+  <br />
   <TextArea disabled placeholder="This is readonly" />
-</Stack>
+</Playground>

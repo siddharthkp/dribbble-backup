@@ -3,9 +3,18 @@ import PropTypes from "prop-types"
 import "./text-input.scss"
 
 const TextInput = props => {
+  const { hasError, ...restOfTheProps } = props
+
   let className = "text-input"
-  if (props.hasError) className += " error"
-  return <input className={className} disabled={props.disabled} {...props} />
+  if (hasError) className += " error"
+
+  return (
+    <input
+      className={className}
+      disabled={props.disabled}
+      {...restOfTheProps}
+    />
+  )
 }
 
 TextInput.propTypes = {
