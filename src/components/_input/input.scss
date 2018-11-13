@@ -3,7 +3,7 @@
 $font-family: $global-font-family;
 $line-height: map-get($global-font-line-height, body);
 $border-size: $global-misc-border-size;
-$border-radius: $global-misc-border-radius;
+$border-radius: map-get($global-misc-border-radius, large);
 $box-shadow: $global-misc-box-shadow--inset;
 $disabled-opacity: 0.5;
 

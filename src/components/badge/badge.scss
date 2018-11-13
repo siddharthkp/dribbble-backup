@@ -1,0 +1,17 @@
+@import "node_modules/tokens/tokens";
+
+$magic-padding: 2px 3px;
+
+.badge {
+  display: inline-block;
+  color: $global-color-white;
+
+  padding: $magic-padding;
+  text-align: center;
+
+  border-radius: map-get($global-misc-border-radius, small);
+  font-size: map-get($global-font-size, 10);
+  font-weight: map-get($global-font-weight, bold);
+
+  text-transform: uppercase;
+}

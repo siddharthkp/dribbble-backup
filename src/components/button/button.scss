@@ -3,9 +3,9 @@
 $font-family: $global-font-family;
 $font-size: map-get($global-font-size, small);
 $font-weight: map-get($global-font-weight, medium);
-$line-height: map-get($global-font-line-height, button);
+$line-height: map-get($global-font-line-height, body-small);
 $border-size: $global-misc-border-size;
-$border-radius: $global-misc-border-radius;
+$border-radius: map-get($global-misc-border-radius, medium);
 $disabled-opacity: 0.5;
 $icon-margin: map-get($global-spacing, small);
 
