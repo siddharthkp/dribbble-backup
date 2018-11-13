@@ -9,8 +9,14 @@ const Button = props => {
       className={`button button--${props.appearance} button--${props.size}`}
       disabled={props.disabled}
     >
-      {props.icon ? <Icon name={props.icon} /> : null}
-      {props.children}
+      {props.icon ? (
+        <span className="icon-container">
+          <Icon name={props.icon} />
+          {props.children}
+        </span>
+      ) : (
+        props.children
+      )}
     </button>
   )
 }

@@ -1,12 +1,12 @@
 @import "node_modules/tokens/tokens";
 
 $font-family: $global-font-family;
-$field-margin: map-get($global-spacing, small);
+// $field-gap: map-get($global-spacing, small);
 $field-gap: map-get($global-spacing, xlarge);
 
 $label-font-size: map-get($global-font-size, 15);
 $label-text-color: map-get($global-color-text, primary);
-$label-margin: map-get($global-spacing, xsmall);
+$label-margin: map-get($global-spacing, small);
 $label-font-weight: map-get($global-font-weight, medium);
 
 $label-optional-font-size: map-get($global-font-size, 11);
@@ -28,7 +28,7 @@ $actions-gap: map-get($global-spacing, small);
 }
 
 .form .field {
-  margin-bottom: $field-margin;
+  margin-bottom: $field-gap;
   position: relative;
 }
 
