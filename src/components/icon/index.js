@@ -1,13 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./icon.scss"
+import icons from "./icons-list"
 
 const Icon = props => {
-  return <i className={`icon icon--${props.name}`} {...props} />
+  return (
+    <i className="icon" {...props}>
+      {icons[props.name]}
+    </i>
+  )
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(["copy", "like", "help"]),
+  name: PropTypes.oneOf([
+    "check",
+    "heart",
+    "like",
+    "like",
+    "link",
+    "list",
+    "paperclip"
+  ]),
   color: PropTypes.string
 }
 

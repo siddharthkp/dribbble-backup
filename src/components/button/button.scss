@@ -139,6 +139,9 @@ $sizes: (
   /* default to normal padding */
   padding: map-get(map-get($sizes, normal), y)
     map-get(map-get($sizes, normal), x);
+
+  display: flex;
+  align-items: center;
 }
 
 /* For each appearance, created a new class  */
@@ -181,4 +184,7 @@ $sizes: (
 /* Styles for icon inside button */
 .button .icon {
   margin-right: $icon-margin;
+}
+.button .icon path {
+  fill: currentColor;
 }
