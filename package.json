@@ -15,7 +15,6 @@
   "scripts": {
     "dev:docs": "docz dev",
     "dev:storybook": "start-storybook -p 9001 -c .storybook -s ./public",
-    "dev:demo": "react-scripts start",
     "build": "docz build",
     "start": "serve dist"
   },

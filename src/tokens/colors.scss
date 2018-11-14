@@ -10,6 +10,18 @@ $global-color-gray: (
   900: #333
 );
 
+$global-color-gray: (
+  100: #f4f4f4,
+  200: #e1e1e7,
+  300: #ddd,
+  400: #bbb,
+  500: #999,
+  600: #777,
+  700: #666,
+  800: #444,
+  900: #333
+);
+
 $global-color-white: #fff;
 
 $global-color-pink: (
@@ -108,7 +120,7 @@ $global-color-text: (
   disabled: map-get($global-color-gray, 400),
   link: map-get($global-color-blue, 500),
   link-dark: map-get($global-color-blue, 700),
-  /* different */ primary-on-dark: map-get($global-color-gray, 300),
+  primary-on-dark: map-get($global-color-gray, 300),
   secondary-on-dark: map-get($global-color-gray, 500)
 );
 

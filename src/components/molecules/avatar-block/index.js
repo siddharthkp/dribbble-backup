@@ -1,8 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./avatar-block.scss"
-import Avatar from "../avatar"
-import Badge from "../badge"
+import { Avatar, Badge } from "components"
 
 const AvatarBlock = props => {
   return (

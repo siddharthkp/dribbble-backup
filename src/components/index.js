@@ -1,14 +1,14 @@
 import "./_helpers/resets.scss"
 
-import Header from "./header/"
-import Button from "./button/"
-import Icon from "./icon/"
-import TextInput from "./text-input/"
-import TextArea from "./text-area/"
-import Form from "./form/"
-import Avatar from "./avatar/"
-import Badge from "./badge/"
-import AvatarBlock from "./avatar-block/"
+import Button from "./atoms/button/"
+import Icon from "./atoms/icon/"
+import TextInput from "./atoms/text-input/"
+import TextArea from "./atoms/text-area/"
+import Avatar from "./atoms/avatar/"
+import Badge from "./atoms/badge/"
+
+import AvatarBlock from "./molecules/avatar-block/"
+import Form from "./molecules/form/"
 
 export {
   Header,

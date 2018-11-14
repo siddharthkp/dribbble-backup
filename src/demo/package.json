@@ -1,9 +1,0 @@
-{
-  "name": "demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "App.js",
-  "dependencies": {
-    "components": "1.0.0"
-  }
-}

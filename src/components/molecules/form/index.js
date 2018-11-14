@@ -4,8 +4,7 @@ import "./form.scss"
 import Field from "./field"
 import Actions from "./actions"
 
-import TextInput from "../text-input"
-import TextArea from "../text-area"
+import { TextInput, TextArea } from "components"
 
 const Form = props => {
   return <form className="form" {...props} />
