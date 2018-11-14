@@ -25,7 +25,9 @@
     "babel-loader": "8.0.4",
     "docz": "0.12.9",
     "node-sass": "4.10.0",
+    "rgb-hex": "2.1.0",
     "sass-loader": "7.1.0",
+    "sass-vars-to-js-loader": "2.0.3",
     "serve": "10.0.2"
   },
   "eslintConfig": {

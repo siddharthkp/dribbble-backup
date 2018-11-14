@@ -14,7 +14,7 @@ const Box = props => {
         }}
       />
       <div>{props.name}</div>
-      {props.color ? <div>{props.color}</div> : null}
+      {typeof props.color === "string" ? <div>{props.color}</div> : null}
     </div>
   )
 }
