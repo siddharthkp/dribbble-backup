@@ -1,32 +1,46 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./shot.scss"
-import { Card, Image, Toolbar } from "components"
+import { AvatarBlock, Card, Counter, Icon, Image, Toolbar } from "components"
 
 const Shot = props => {
   return (
-    <div style={{ width: props.width }} className="shot" {...props}>
+    <div className="shot">
       <Card>
         <Card.Body>
-          <Image src="https://cdn.dribbble.com/users/666045/screenshots/3611646/artboard_3_1x.png" />
+          <Image src={props.src} />
         </Card.Body>
         <Card.Footer>
           <Toolbar>
-            <Toolbar.Left />
-            <Toolbar.Right />
+            <Toolbar.Left>
+              <Icon name="paperclip" />
+            </Toolbar.Left>
+            <Toolbar.Right>
+              <Counter value={props.stats.views} icon="view" />
+              <Counter value={props.stats.comments} icon="comment" />
+              <Counter value={props.stats.likes} icon="heart" />
+            </Toolbar.Right>
           </Toolbar>
         </Card.Footer>
       </Card>
+      <AvatarBlock {...props.user} />
     </div>
   )
 }
 
 Shot.propTypes = {
-  width: PropTypes.number
-}
-
-Shot.defaultProps = {
-  width: 200
+  url: PropTypes.string,
+  stats: PropTypes.shape({
+    views: PropTypes.number,
+    comments: PropTypes.number,
+    likes: PropTypes.number
+  }),
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    url: PropTypes.string,
+    label: PropTypes.string,
+    src: PropTypes.string
+  })
 }
 
 export default Shot

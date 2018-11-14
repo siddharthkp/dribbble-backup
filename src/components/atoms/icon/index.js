@@ -13,7 +13,15 @@ const Icon = props => {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(["check", "heart", "link", "list", "paperclip"]),
+  name: PropTypes.oneOf([
+    "check",
+    "heart",
+    "link",
+    "list",
+    "paperclip",
+    "comment",
+    "view"
+  ]),
   color: PropTypes.string
 }
 

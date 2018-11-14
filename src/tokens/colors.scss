@@ -118,6 +118,7 @@ $global-color-text: (
   primary-light: map-get($global-color-gray, 600),
   secondary: map-get($global-color-gray, 500),
   disabled: map-get($global-color-gray, 400),
+  subtle: map-get($global-color-gray, 400),
   link: map-get($global-color-blue, 500),
   link-dark: map-get($global-color-blue, 700),
   primary-on-dark: map-get($global-color-gray, 300),

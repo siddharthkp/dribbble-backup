@@ -5,11 +5,11 @@ import { Avatar, Badge } from "components"
 
 const AvatarBlock = props => {
   return (
-    <span className="avatar-block">
-      <Avatar src={props.src} />
+    <div className="avatar-block">
+      <Avatar size="xsmall" src={props.src} />
       <a href={props.url}>{props.name}</a>
       <Badge>{props.label}</Badge>
-    </span>
+    </div>
   )
 }
 

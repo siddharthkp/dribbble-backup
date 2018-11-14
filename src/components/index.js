@@ -3,6 +3,7 @@ import "./_helpers/resets.scss"
 import Avatar from "./atoms/avatar/"
 import Badge from "./atoms/badge/"
 import Button from "./atoms/button/"
+import Counter from "./atoms/counter/"
 import Icon from "./atoms/icon/"
 import Image from "./atoms/image/"
 import TextArea from "./atoms/text-area/"
@@ -18,6 +19,7 @@ export {
   Avatar,
   Badge,
   Button,
+  Counter,
   Icon,
   Image,
   TextArea,

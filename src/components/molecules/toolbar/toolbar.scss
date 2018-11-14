@@ -2,23 +2,25 @@
 
 .toolbar {
   width: 100%;
+  display: flex;
 }
 .toolbar-left {
-  float: left;
+  display: flex;
 }
 .toolbar-right {
-  float: right;
+  display: flex;
+  margin-left: auto;
 }
 
 .toolbar-left > * {
-  margin-right: map-get($global-spacing, xsmall);
+  margin-right: map-get($global-spacing, small);
 }
 .toolbar-left > *:last-child {
   margin-right: 0;
 }
 
 .toolbar-right > * {
-  margin-left: map-get($global-spacing, xsmall);
+  margin-left: map-get($global-spacing, small);
 }
 .toolbar-right > *:first-child {
   margin-left: 0;
