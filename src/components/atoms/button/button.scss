@@ -1,9 +1,9 @@
 @import "node_modules/tokens/tokens";
 
 $font-family: $global-font-family;
-$font-size: map-get($global-font-size, small);
-$font-weight: map-get($global-font-weight, medium);
+$font-size: map-get($global-font-size, body-small);
 $line-height: map-get($global-font-line-height, body-small);
+$font-weight: map-get($global-font-weight, medium);
 $border-size: $global-misc-border-size;
 $border-radius: map-get($global-misc-border-radius, medium);
 $disabled-opacity: 0.5;

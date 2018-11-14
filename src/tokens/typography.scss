@@ -6,22 +6,12 @@ $global-font-size: (
   heading3: 18px,
   heading4: 12px,
   body-large: 16px,
-  body-label: 15px,
+  body-plus: 15px,
   body: 14px,
-  body-text: 14px,
   body-small: 13px,
   caption-title: 14px,
-  caption-text: 12px,
-  caption-small: 11px,
-  // deprecate ⬇️,
-    16: 16px,
-  15: 15px,
-  default: 14px,
-  13: 13px,
-  small: 13px,
-  12: 12px,
-  xsmall: 12px,
-  10: 10px
+  caption: 12px,
+  caption-small: 11px
 );
 
 $global-font-weight: (

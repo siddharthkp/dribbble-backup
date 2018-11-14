@@ -1,7 +1,7 @@
 @import "node_modules/tokens/tokens";
 
 $link-color: map-get($global-color-text, link);
-$font-size: map-get($global-font-size, 13);
+$font-size: map-get($global-font-size, body);
 $font-weight: map-get($global-font-weight, medium);
 $line-height: map-get($global-font-line-height, body-small);
 $margin: 0 map-get($global-spacing, xsmall);

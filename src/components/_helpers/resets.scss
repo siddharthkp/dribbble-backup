@@ -1,7 +1,7 @@
 @import "node_modules/tokens/tokens";
 
 $font-family: $global-font-family;
-$font-size: map-get($global-font-size, default);
+$font-size: map-get($global-font-size, body);
 $text-color: map-get($global-color-text, primary);
 
 /* Resets */

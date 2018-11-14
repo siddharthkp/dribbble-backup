@@ -1,0 +1,29 @@
+@import "node_modules/tokens/tokens";
+
+.toolbar {
+  width: 100%;
+}
+.toolbar-left {
+  float: left;
+}
+.toolbar-right {
+  float: right;
+}
+
+.toolbar-left > * {
+  margin-right: map-get($global-spacing, xsmall);
+}
+.toolbar-left > *:last-child {
+  margin-right: 0;
+}
+
+.toolbar-right > * {
+  margin-left: map-get($global-spacing, xsmall);
+}
+.toolbar-right > *:first-child {
+  margin-left: 0;
+}
+
+.toolbar-clear {
+  clear: both;
+}

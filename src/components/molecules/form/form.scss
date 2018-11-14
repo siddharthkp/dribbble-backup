@@ -4,19 +4,19 @@ $font-family: $global-font-family;
 // $field-gap: map-get($global-spacing, small);
 $field-gap: map-get($global-spacing, xlarge);
 
-$label-font-size: map-get($global-font-size, 15);
+$label-font-size: map-get($global-font-size, body-plus);
 $label-text-color: map-get($global-color-text, primary);
 $label-margin: map-get($global-spacing, small);
 $label-font-weight: map-get($global-font-weight, medium);
 
-$label-optional-font-size: map-get($global-font-size, 11);
+$label-optional-font-size: map-get($global-font-size, body-small);
 $label-optional-text-color: map-get($global-color-text, secondary);
 
-$counter-font-size: map-get($global-font-size, 12);
+$counter-font-size: map-get($global-font-size, caption-text);
 $counter-text-color: map-get($global-color-text, secondary);
 $counter-font-weight: map-get($global-font-weight, medium);
 
-$help-text-font-size: map-get($global-font-size, 13);
+$help-text-font-size: map-get($global-font-size, body-small);
 $help-text-text-color: map-get($global-color-text, secondary);
 $help-text-margin: map-get($global-spacing, small);
 
